@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.678);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: bold;
+  color: orange;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  font-family: "Bayon";
+}
+
+.menu a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: "Dangrek";
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: orange;
+  text-decoration: underline; 
+}
+
+/* Hero section with background */
+.hero {
+  background: url('/Sr-img/angkor-hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 10rem 2rem;
+  
+}
+
+.hero h2,
+.hero p,
+.hero button,
+.hero h1 {
+  margin-left: 20rem;
+  font-family: "Bayon";
+}
+.hero button a {
+  text-decoration: none;
+  color: white
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: "Bayon";
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, rgb(206, 145, 74), rgb(214, 32, 32));
+  border: 1px white solid;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: linear-gradient(to right, rgba(238, 238, 238, 0.747), rgba(214, 32, 32, 0.747));
+}
+
+.contact-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.card-container {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  font-family: "Bokor";
+  margin-top: 50px;
+  margin-left: 9%;
+}
+.titleOfsr h1{ 
+  font-family: "Bayon";
+  text-align: center;
+  margin-top: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  width: 400px;
+  /* Fixed width for consistency */
+  overflow: hidden;
+  transition: transform 0.2s;
+  /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* Ensures image fits nicely */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-content .price {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ff4500;
+  /* Orange color for price */
+  font-weight: bold;
+}
+
+.card-content .details {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(54, 52, 52);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}

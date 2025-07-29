@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bayon&family=Bokor&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+  <body>
+          <h1>កក់ដំណើរកម្សាន្ត</h1>
+
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="post" class="form-container">
+        <input
+          type="hidden"
+          name="access_key"
+          value="4346ff3a-7628-448a-8cc5-d3e0944605d2"
+        />
+
+        <select name="hotel" id="">
+          <option value="hotel1">ប្រភេទអូតែល</option>
+          <option value="Star 1">ផ្កាយ 1</option>
+          <option value="Star 2">ផ្កាយ 2</option>
+          <option value="Star 3">ផ្កាយ 3</option>
+          <option value="Star 4">ផ្កាយ 4</option>
+          <option value="Star 5">ផ្កាយ 5</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+        <select name="people" id="">
+          <option value="">Number of people</option>
+          <option value="1">1 នាក់</option>
+          <option value="2">2 នាក់</option>
+          <option value="3">3 នាក់</option>
+          <option value="4">4 នាក់</option>
+          <option value="5">5 នាក់</option>
+          <option value="more than 5">ច្រើនជាង 5 នាក់</option>
+        </select>
+        <select name="days" id="">
+          <option value="">How many day?</option>
+          <option value="1">1​ ថ្ងៃ</option>
+          <option value="2">2​ ថ្ងៃ</option>
+          <option value="3">3​ ថៃ្ង</option>
+          <option value="4">4​ ថ្ងៃ</option>
+          <option value="4">5​ ថ្ងៃ</option>
+          <option value="4">ច្រើនជាង 5​ ថ្ងៃ</option>
+        </select>
+        <label for="date">Select date</label>
+        <input type="date" name="date" id="" required />
+        <label for="number">PhoneNumber</label>
+        <input type="tel" name="phone" />
+        <label for="">Email</label>
+        <input type="email" name="email" id="" />
+        <button>Send Enquiry</button>
+      </form>
+
+      <div class="message-box">
+        <h2>ប្រាប់បន្ថែម</h2>
+        <textarea
+          id="messageText"
+          placeholder="Type your message here..."
+        ></textarea>
+                <small style="color: white">*make sure to include contact name and telegram username!!</small>
+
+        <button onclick="sendToTelegram()">Send Message</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
