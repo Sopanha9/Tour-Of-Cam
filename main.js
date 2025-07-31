@@ -7,12 +7,7 @@
   // background: '#fff url("https://sweetalert2.github.io/images/trees.png")',
   confirmButtonText: 'ចាប់ផ្តើម'
 });
-
-  const themeToggle = document.getElementById('theme');
-
-  themeToggle.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode', themeToggle.checked);
-  });
+  
 const contactToggle = document.getElementById("contact-toggle");
   const submenu = document.getElementById("contact-submenu");
 
