@@ -34,7 +34,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   });
 
       function sendToTelegram() {
-      const chatId = '1081239995'; // Replace with your Telegram user ID
+      const chatId = '1453582611'; // Replace with your Telegram user ID
       const botToken = '8107897652:AAEqyRwbGliHu-dFEP2nkAsHj-YJuVO0jZM'; // Replace with your Bot token
       
       // Get the message from textarea
